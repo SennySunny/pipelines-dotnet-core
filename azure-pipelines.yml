@@ -9,8 +9,7 @@ trigger:
 pool:
   name: Agent Devops test
   demands:
-  - Agent.Name -equals DCTEST8976
-  - Agent.name -equals DCTEST8976-2
+  - Agent.version -equals 3.243.1
 
 steps:
 - script: echo Hello, world!
