@@ -8,7 +8,9 @@ trigger:
 
 pool:
   name: Agent Devops test
-  vmImage: ubuntu-latest
+  demands:
+  - Agent.Name -equals DCTEST8976
+  - Agent.Name -equals DCTEST8976-2
 
 steps:
 - script: echo Hello, world!
